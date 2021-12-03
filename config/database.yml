@@ -24,8 +24,8 @@ default: &default
 development:
   <<: *default
   database: rails_demo_development
-  username: postgres
-  password: P@ssw0rd
+  username: postgres #default username for postgres
+  password: P@ssw0rd #local password for you postgres user
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.

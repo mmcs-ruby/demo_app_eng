@@ -1,0 +1,16 @@
+<h2> Edit Post <%= @post.title %></h2>
+
+<%= form_for(@post, remote: true) do |f| %>
+  <div class="form-container">
+    <div>
+      <%= f.label :text, class: 'custom-label' %>
+      <%= f.text_area :text %>
+    </div>
+
+    <div>
+      <%= f.submit %>
+    </div>
+
+  </div>
+
+<% end %>
